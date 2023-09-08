@@ -1,0 +1,190 @@
+
+.products{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(135deg, #151718 20%, #cc8708 90%);
+}
+.containeradd{
+ width: 30%;
+ height: auto;
+ padding: 20px;
+ align-items: center;
+ background-color: rgb(0, 0, 0);
+ position: relative;
+ border-radius: 10px;
+}
+
+.formadd {
+    height: 50px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.formadd input {
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #000000;
+    font-size: 1rem;
+    padding: 0 20px;
+}
+
+.formadd input:is(:focus, :valid) {
+    background: #ffffff;
+    padding: 16px 20px 0;
+}
+
+.formadd label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    color: #000000;
+    transition: all 0.1s ease;
+}
+
+.formadd input:is(:focus, :valid)~label {
+    font-size: 0.75rem;
+    transform: translateY(-130%);
+}
+
+.addbtn {
+    width: 50%;
+    padding: 16px 0;
+    font-size: 1rem;
+    background: rgb(4, 202, 87);
+    color: #000000;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin: 25px 0 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+    text-align: center;
+    margin-left: 140px;
+}
+
+.card{
+  max-width: 350px;
+  width: 100%;
+  margin: 170px auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.card .title{
+  font-size: 22px;
+  font-weight: 500;
+}
+.card .content{
+  margin-top: 20px;
+}
+.card  label.box{
+  background: #ddd;
+  margin-top: 12px;
+  padding: 10px 12px;
+  display: flex;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+#one:checked ~ label.first,
+#two:checked ~ label.second,
+#three:checked ~ label.third{
+  border-color: #8E49E8;
+  background: #d5bbf7;
+}
+.card  label.box:hover{
+  background: #d5bbf7;
+}
+.card  label.box .circle{
+  height: 22px;
+  width: 22px;
+  background: #ccc;
+  border: 5px solid transparent;
+  display: inline-block;
+  margin-right: 15px;
+  border-radius: 50%;
+  transition: all 0.25s ease;
+  box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.2);
+}
+#one:checked ~ label.first .circle,
+#two:checked ~ label.second .circle,
+#three:checked ~ label.third .circle{
+  border-color: #8E49E8;
+  background: #fff;
+}
+.card  label.box .plan{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.card input[type="radio"]{
+  display: none;
+}
+
+
+.dropbtn {
+  background-color: #f9f9f9;
+  color: #0f0f0f;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  min-width: 370px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 98;
+  max-height: 0;
+  min-width: 160px;
+  transition: max-height 0.15s ease-out;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: black;
+  background-color: #f9f9f9;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #e2e2e2;
+}
+
+.dropdown:hover .dropdown-content {
+  max-height: 500px;
+  min-width: 160px;
+  transition: max-height 0.25s ease-in;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0;
+  transition: max-height 0.25s ease-in;
+}
+
+.category{
+width: 50px;
+}
