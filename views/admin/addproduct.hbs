@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {{!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> --}}
+  
     <title>Document</title>
 </head>
 <body>
@@ -12,41 +11,42 @@
     <div class="products">
         <div class="containeradd">
             <h1 style="color: gold;"> UPDATE </h1>
-            <form action="">
-                     <div class="category">
-                <select name="" id="">
-                    <option value="">backpack</option>
-                    <option value="">bags</option>
-                    <option value="">chair</option>
-                    <option value="">lights</option>
-                    <option value="">stoves</option>  
-                    <option value="">tent</option>
-                </select>
-            </div>
-                 
+            <form action="/addproduct" method="post">
+                     <div class="formadd">
+                        <label for="category">Category</label>
+                        <select name="category" id="category">
+                            <option value="backpack">Backpack</option>
+                            <option value="bags">Bags</option>
+                            <option value="chair">Chair</option>
+                            <option value="lights">Lights</option>
+                            <option value="stoves">Stoves</option>
+                            <option value="tent">Tent</option>
+                        </select>
+                 </div>
                 <div class="formadd">
-               <input type="text" placeholder="itemname" required>
+               <input type="text" name="name" placeholder="itemname" required>
                 {{!-- <label>Car Name</label> --}}
             </div>
             <div class="formadd">
-                <input type="text" placeholder="Brand" required >
+                <input type="text" name="Brand" placeholder="Brand" required >
                 {{!-- <label>Brand</label> --}}
             </div>
             <div class="formadd">
-                <input type="text" placeholder="Price" required>
+                <input type="text" name="Price" placeholder="Price" required>
                 {{!-- <label>Brand</label> --}} 
             </div>
         
          
             <div class="formadd">
-                <input type="text" placeholder="discription" >
+                <input type="text" name="discription" placeholder="discription" >
                 {{!-- <label>Brand</label> --}}
             </div>
             <div class="formadd">
                  <input type="file" id="img" name="img" accept="image/*">   
             </div>
-            
-             <a href="" class="addbtn">ADD PRODUCT</a>
+            <div>
+      <input type="submit" value="ADD" class="addbtn">
+    </div>
             </form>
         </div>
     </div>
