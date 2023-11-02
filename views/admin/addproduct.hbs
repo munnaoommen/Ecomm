@@ -11,7 +11,7 @@
     <div class="products">
         <div class="containeradd">
             <h1 style="color: gold;"> UPDATE </h1>
-            <form action="/addproduct" method="post">
+            <form action="/addproduct" method="post" enctype="multipart/form-data">
                      <div class="formadd">
                         <label for="category">Category</label>
                         <select name="category" id="category">
@@ -39,8 +39,7 @@
          
             <div class="formadd">
                 <input type="text" name="discription" placeholder="discription" >
-                {{!-- <label>Brand</label> --}}
-            </div>
+            </div>-
             <div class="formadd">
                  <input type="file" id="img" name="img" accept="image/*">   
             </div>
@@ -52,4 +51,4 @@
     </div>
     </div>
 </body>
-</html>
+</html> 

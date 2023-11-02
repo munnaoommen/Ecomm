@@ -9,13 +9,15 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
+    "express-fileupload": "^1.4.1",
     "express-session": "^1.17.3",
     "hbs": "~4.0.4",
     "http-errors": "~1.6.3",
     "mongodb": "^6.1.0",
     "mongoose": "^7.5.0",
     "morgan": "~1.9.1",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "razorpay": "^2.9.2"
   },
   "main": "app.js",
   "author": "",

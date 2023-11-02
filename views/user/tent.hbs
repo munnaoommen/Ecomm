@@ -13,17 +13,22 @@
         </div>
   <body>
     <div class="container3">
+      {{#each product }}
         <div class="box">
       <div class="image">
-        <img src="img1.jpeg">
+       <img src="/images/product/{{this._id}}.jpg">
         </div>
-        <div class="name_job">David Chrish</div>
-        <p> Lorem ipsum dolor sitamet, stphen hawkin so adipisicing elit. Ratione disuja doloremque reiciendi nemo.</p>
+        <div class="name_job">{{this.name}}</div>
+        <div class="name_job">{{this.Brand}}</div>
+        <div class="name_job">{{this.Price}}.₹</div>
+        <div class="name_job">{{this.discription}}</div>
+
         <div class="btns"> 
        <a href="/users/cart"  class="button1  ">BUY</a>
        <a href="/users/cart" class="button2">ADD  TO CART</a>
         </div>
       </div> 
+      {{/each}} 
     </div>
       </body>
 </html>

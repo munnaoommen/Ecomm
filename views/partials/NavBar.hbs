@@ -35,8 +35,12 @@
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#contact">Contact Us</a></li>
-            <li><a href="users/login">LOGIN</a></li>
-              <li><a href="users/cart">CART</a></li>
+          {{#if employee}}
+            <li><a href="#">{{employee.fullname}}</a></li>
+            {{else}}
+             <li><a href="users/login">LOGIN</a></li>
+            {{/if}}
+              {{!-- <li><a href="users/cart">CART</a></li> --}}
         </ul>
       </nav>
     </header>
@@ -58,32 +62,32 @@
       <ul class="cards">
         <li class="card">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGnRf7KtftZ79_aXaKgj-X8lGY7K6tZfdTxg&usqp=CAU" alt="img">
-       <h3><a href="users/tent">Tents</a></h3>
+       <h3><a href="users/types/tent">Tents</a></h3>
           <p>Experience comfort and protection with our high-quality camping tents.</p>
         </li>
         <li class="card">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSag5E-3G2ZujgqGhlNi0MnRqycRKfENUOGw&usqp=CAU" alt="img">
-            <h3><a href="users/bags">Sleeping Bags</a></h3>
+            <h3><a href="users/types/bags">Sleeping Bags</a></h3>
           <p>Stay cozy and warm during your camping trips with our premium sleeping bags.</p>
         </li>
         <li class="card">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9W4saFQltZ-h-CVvX3xq9ce1SmSJKYWin_Q&usqp=CAU" alt="img">
-           <h3><a href="users/stoves">Camp Stoves</a></h3>
+           <h3><a href="users/types/stoves">Camp Stoves</a></h3>
           <p>Cook delicious meals in the great outdoors with our reliable camp stoves.</p>
         </li>
         <li class="card">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7PvciCA5_oZ2W87z6mpmU48RjQW4j7-r1Mg&usqp=CAU" alt="img">
-            <h3><a href="users/backpack">Backpacks</a></h3>
+            <h3><a href="users/types/backpack">Backpacks</a></h3>
           <p>Carry your essentials comfortably with our durable and functional camping backpacks.</p>
         </li>
         <li class="card">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT656dmMoXfHPxwDGUynZXTmCwAE9K6uUhl0g&usqp=CAU" alt="img">
-            <h3><a href="users/chair">Camp Chairs</a></h3>
+            <h3><a href="users/types/chair">Camp Chairs</a></h3>
           <p>Relax and unwind in style with our comfortable and portable camping chairs.</p>
         </li>
         <li class="card">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2FEO1NeAMoTzcSCNgqf59xNH4i8NNJXawZQ&usqp=CAU" alt="img">
-           <h3><a href="users/lights">Camp Lights</a></h3>
+           <h3><a href="users/types/lights">Camp Lights</a></h3>
           <p>Illuminate your campsite with our reliable and energy-efficient camping lights.</p>
         </li>
       </ul>

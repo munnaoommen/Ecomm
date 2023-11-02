@@ -19,7 +19,7 @@ const addproductSchema = new mongoose.Schema({
     },
     category : {
         type:String,
-        required:[true,"category needed"]
+        required:[true,"category needed"]  
     },
 })
 module.exports = mongoose.model('addproduct',addproductSchema)
